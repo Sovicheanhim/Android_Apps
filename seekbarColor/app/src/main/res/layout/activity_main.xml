@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/page"
+        tools:context=".MainActivity">
+
+    <SeekBar android:layout_width="match_parent" android:layout_height="50dp"
+        android:id="@+id/alpha"
+    />
+    <SeekBar android:layout_width="match_parent" android:layout_height="50dp"
+             android:id="@+id/red"
+    />
+    <SeekBar android:layout_width="match_parent" android:layout_height="50dp"
+             android:id="@+id/green"
+    />
+    <SeekBar android:layout_width="match_parent" android:layout_height="50dp"
+             android:id="@+id/blue"
+    />
+    <TextView android:layout_width="match_parent" android:layout_height="30dp"
+        android:id="@+id/alphaText"
+              android:gravity="center"
+              android:text="Opacity: 0"
+    />
+    <TextView android:layout_width="match_parent" android:layout_height="30dp"
+              android:id="@+id/redText"
+              android:gravity="center"
+              android:text="Red: 0"
+    />
+    <TextView android:layout_width="match_parent" android:layout_height="30dp"
+              android:gravity="center"
+              android:id="@+id/greenText"
+              android:text="Green: 0"
+    />
+    <TextView android:layout_width="match_parent" android:layout_height="30dp"
+              android:id="@+id/blueText"
+              android:gravity="center"
+              android:text="Blue: 0"
+              android:layout_marginBottom="50dp"
+    />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="150dp">
+        <Button
+                android:layout_width="125dp"
+                android:layout_height="130dp"
+                android:background="@android:color/holo_red_light"
+                android:text="Red"
+                android:id="@+id/redButton"
+                android:onClick="changeColor"
+        />
+        <Button
+                android:layout_width="125dp"
+                android:layout_height="130dp"
+                android:text="Green"
+                android:id="@+id/greenButton"
+                android:background="@android:color/holo_green_light"
+                android:onClick="changeColor"
+        />
+        <Button
+                android:layout_width="125dp"
+                android:layout_height="130dp"
+                android:text="Blue"
+                android:background="@android:color/holo_blue_light"
+                android:id="@+id/blueButton"
+                android:onClick="changeColor"
+        />
+    </LinearLayout>
+</LinearLayout>
