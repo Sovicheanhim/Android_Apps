@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         var br = object: BroadcastReceiver(){
             override fun onReceive(p0: Context?, p1: Intent?) {
-                Toast.makeText(this@MainActivity, "THE WRATH IS COMING", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity, p1?.action, Toast.LENGTH_SHORT).show()
             }
         }
 

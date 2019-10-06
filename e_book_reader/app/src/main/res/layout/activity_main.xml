@@ -7,40 +7,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".MainActivity">
-    <ViewFlipper
-            android:layout_width="match_parent"
-            android:layout_height="500dp"
-    >
-        <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/test_wallpaper_01"
-        />
-        <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/test_wallpaper_02"
-        />
-        <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/test_wallpaper_03"
-        />
-        <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/test_wallpaper_04"
-        />
-        <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/test_wallpaper_05"
-        />
-    </ViewFlipper>
+    <ImageView android:layout_width="match_parent" android:layout_height="500dp"
+            android:id="@+id/displayBook"
+    />
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp">
+            android:layout_marginTop="10dp">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -63,5 +36,13 @@
                 android:onClick="buttonClick"
         />
     </LinearLayout>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visit"
+            android:layout_gravity="center"
+            android:id="@+id/gotoPage"
+            android:onClick="buttonClick"
+    />
 
 </LinearLayout>
