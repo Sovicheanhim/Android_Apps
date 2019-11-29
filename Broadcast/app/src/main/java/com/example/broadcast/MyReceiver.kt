@@ -8,6 +8,6 @@ import android.widget.Toast
 class MyReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
-        Toast.makeText(context, "My Recevier Message", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, "My Receiver Message", Toast.LENGTH_SHORT).show()
     }
 }
